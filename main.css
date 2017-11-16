@@ -1,0 +1,171 @@
+.header{
+    width: 100%;
+    height: 250px;
+    background: url("https://sun1-3.userapi.com/c837129/v837129044/53b37/uLHQdc_E-oM.jpg") center center no-repeat;
+    background-size:cover;
+    margin: 0 auto;
+}
+
+.video{
+    width: 300px;
+    height: 300px;
+    margin: 20px 20px;
+}
+
+.video img{
+    width: 300px;
+    height: 250px;
+}
+
+.videoName{
+    padding-top:7px;
+    height: 54px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.ya-share2 span{
+    height: 28px;
+    width: 30px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.iframe{
+    width: 800px;
+}
+
+.share{
+    padding: 10px;
+}
+
+.content h1{
+    padding:20px 0;
+}
+
+.content p{
+    padding:20px 0;
+}
+
+.allContent{
+    justify-content: center;
+}
+
+.footer{
+    height: 70px;
+    /*background: rgba(0, 64, 255, 0.77);*/
+    background: linear-gradient(45deg, #0000ff, rgba(178, 0, 189, 0.48));
+    text-align: center;
+    color: #fff1f0;
+    padding: 40px;
+}
+
+.slider img{
+    width: 250px;
+    height: 180px;
+}
+
+.slider button::before{
+    color: black;
+}
+
+.slick-slider{
+    width: 77%;
+    margin:20px auto;
+}
+
+@media (max-width: 575px) {
+    .header {
+        height: 90px;
+    }
+    .video{
+        width: 100%;
+        height: 320px;
+        margin: 10px 0;
+    }
+    .video img{
+        width: 100%;
+        height: 255px;
+    }
+    .iframe{
+        width: 100%;
+    }
+    .content h1{
+        font-size: 180%
+    }
+    .slider img{
+        width: 100px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .header {
+        height: 90px;
+    }
+    .video{
+        width: 350px;
+        height: 350px;
+    }
+    .video img{
+        width: 350px;
+        height: 300px;
+    }
+    .iframe{
+        width: 500px;
+    }
+    .content h1{
+    font-size: 180%
+    }
+    .slider img{
+        width: 120px;
+        height: 70px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 150px;
+    }
+    .allContent{
+        justify-content: space-between;
+    }
+    .iframe{
+        width: 650px;
+    }
+    .slider img{
+        width: 160px;
+        height: 90px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .allContent{
+        justify-content: space-between;
+    }
+    .video{
+        width: 250px;
+        height: 250px;
+    }
+
+    .video img{
+        width: 250px;
+        height: 200px;
+    }
+
+    .slider img{
+        width: 200px;
+        height: 130px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .allContent{
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
