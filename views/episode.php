@@ -14,7 +14,7 @@ $ran = array_rand($episodes, 6);
     <meta property="og:type"            content="article" />
     <meta property="og:title"           content="<?php echo "EE Team Life:".$post['name'].""?>" />
     <meta property="og:url"             content="<?php echo "http://riyga251.had.su/episode/".$post['name_url'].""?>" />
-    <meta property="og:image"           content="<?php echo "http://img.youtube.com/vi/".$post['url']."/hqdefault.jpg"?>" />
+    <meta property="og:image"           content="<?php echo "http://img.youtube.com/vi/".$post['url']."/maxresdefault.jpg"?>" />
     <meta property="og:description"     content="<?php echo $post['metadescription']?>" />
     <meta property="og:video"           content="<?php echo "https://www.youtube.com/embed/".$post['url'].""?>" />
 
