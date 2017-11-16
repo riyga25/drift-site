@@ -5,13 +5,26 @@ $ran = array_rand($episodes, 6);
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport"               content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title><?php echo $post['name']; ?></title>
+
+    <meta name="description"            content="<?php echo $post['metadescription']?>"/>
+    <meta name="keywords"               content="<?php echo $post['metakeywords']?>" />
+
+    <meta property="og:type"            content="article" />
+    <meta property="og:title"           content="<?php echo "EE Team Life:".$post['name'].""?>" />
+    <meta property="og:url"             content="<?php echo "http://riyga251.had.su/episode/".$post['name_url'].""?>" />
+    <meta property="og:image"           content="<?php echo "http://img.youtube.com/vi/".$post['url']."/hqdefault.jpg"?>" />
+    <meta property="og:description"     content="<?php echo $post['metadescription']?>" />
+    <meta property="og:video"           content="<?php echo "https://www.youtube.com/embed/".$post['url'].""?>" />
+
+    <link rel="stylesheet"              href="../main.css">
+    <link rel="stylesheet"              type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet"              type="text/css" href="../slick/slick-theme.css"/>
+    <link rel="stylesheet"              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="96x96" href="http://www.eedrift.com/wp-content/themes/evilempire/favicon/favicon-96x96.png">
+
+    <title> EE Team Life: <?php echo $post['name']?></title>
 </head>
 <body>
 <div class="container">
@@ -22,7 +35,6 @@ $ran = array_rand($episodes, 6);
         <h1><?php echo $post['name']; ?></h1>
         <div class="iframe">
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/N22VEYJfkxY" allowfullscreen></iframe>
                 <?php
                 echo "<iframe class=\"embed-responsive-item\" src=\"https://www.youtube.com/embed/".$post['url']."\" allowfullscreen></iframe>";
                 ?>
@@ -36,12 +48,12 @@ $ran = array_rand($episodes, 6);
         <p class="title"><?php echo $post['title']; ?></p>
     </div>
     <div class="slider">
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[0]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[0]]['url']."/0.jpg\"></a></div>" ?>
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[1]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[1]]['url']."/0.jpg\"></a></div>" ?>
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[2]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[2]]['url']."/0.jpg\"></a></div>" ?>
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[3]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[3]]['url']."/0.jpg\"></a></div>" ?>
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[4]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[4]]['url']."/0.jpg\"></a></div>" ?>
-        <?php echo "<div><a href=\"/episode/".$episodes[$ran[5]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[5]]['url']."/0.jpg\"></a></div>" ?>
+        <?php echo "<div><a href=\"/episode/".$episodes[$ran[0]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[0]]['url']."/0.jpg\"></a></div>";
+              echo "<div><a href=\"/episode/".$episodes[$ran[1]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[1]]['url']."/0.jpg\"></a></div>";
+              echo "<div><a href=\"/episode/".$episodes[$ran[2]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[2]]['url']."/0.jpg\"></a></div>";
+              echo "<div><a href=\"/episode/".$episodes[$ran[3]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[3]]['url']."/0.jpg\"></a></div>";
+              echo "<div><a href=\"/episode/".$episodes[$ran[4]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[4]]['url']."/0.jpg\"></a></div>";
+              echo "<div><a href=\"/episode/".$episodes[$ran[5]]['name_url']."\"><img src=\"http://img.youtube.com/vi/".$episodes[$ran[5]]['url']."/0.jpg\"></a></div>" ?>
     </div>
     <div class="footer">made in ololo trololo</div>
 </div>
